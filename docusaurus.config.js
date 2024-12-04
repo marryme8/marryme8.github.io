@@ -80,13 +80,15 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+          {to: '/intro', label: '团队简介', position: 'left'},
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: '文字资料库',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/video', label: '视频资料', position: 'left'},
+          {to: '/blog', label: '讨论区', position: 'left'},
           {
             href: 'https://github.com/yufoo1',
             label: 'GitHub',

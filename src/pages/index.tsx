@@ -23,13 +23,13 @@ function HomepageHeader() {
             to="/docs/intro">
             Let's Start
           </Link>
-          <DocSearch
+          {/* <DocSearch
             searchParameters={{
               facetFilters: [
                 'language:cn',
                 'version:1.0.0',
               ],
-            }} appId={'A5Q8WWLEBR'} apiKey={'f50d1bb3d471eab0865c36dfb47308e5'} indexName={'demo'}/>
+            }} appId={'A5Q8WWLEBR'} apiKey={'f50d1bb3d471eab0865c36dfb47308e5'} indexName={'demo'}/> */}
         </div>
       </div>
     </header>

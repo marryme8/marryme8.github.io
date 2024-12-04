@@ -90,11 +90,11 @@ const config = {
           {to: '/video', label: '视频资料', position: 'left'},
           {to: '/blog', label: '讨论区', position: 'left'},
           // {to: '/intro-second', label: '团队简介', position: 'left'},
-          {
-            href: 'https://github.com/yufoo1',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/yufoo1',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {

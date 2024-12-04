@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 
 import VideoPlayer from '../../../src/components/video/video';
+import './index.css'
 
 const videoJsOptions = {
     sources: [
@@ -15,19 +16,12 @@ const videoJsOptions = {
 export default function Hello() {
   return (
     <Layout title="Hello" description="Hello React Page">
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          height: '50vh',
-          fontSize: '20px',
-        }}>
-        <h1>Welcome to the New Page</h1>
-        <p>This is a new page added to the app.</p>
+      <div className='video-div'>
+        <h1 className='video-h1-text'>婚俗词视频展示</h1>
+        {/* <p>This is a new page added to the app.</p> */}
         <div style={{width: "50%"}}>
-        <VideoPlayer options={videoJsOptions}/>
-      </div>
+            <VideoPlayer options={videoJsOptions}/>
+        </div>
       </div>
     </Layout>
   );

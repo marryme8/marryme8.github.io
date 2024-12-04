@@ -1,0 +1,10 @@
+.video-div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-h1-text {
+    margin-bottom: 20px;
+}

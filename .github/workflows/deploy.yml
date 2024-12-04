@@ -15,7 +15,7 @@ jobs:
       - name: Publish the static site to GitHub Pages.
         uses: jamesives/github-pages-deploy-action@releases/v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
           BRANCH: gh-pages
           FOLDER: build
 

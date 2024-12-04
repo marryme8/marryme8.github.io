@@ -8,6 +8,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
 import LoginPage from './login/index';
+import { DocSearch } from '@docsearch/react';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -22,6 +23,13 @@ function HomepageHeader() {
             to="/docs/intro">
             Let's Start
           </Link>
+          <DocSearch
+            searchParameters={{
+              facetFilters: [
+                'language:cn',
+                'version:1.0.0',
+              ],
+            }} appId={'A5Q8WWLEBR'} apiKey={'f50d1bb3d471eab0865c36dfb47308e5'} indexName={'demo'}/>
         </div>
       </div>
     </header>
@@ -32,7 +40,7 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>

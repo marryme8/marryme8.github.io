@@ -33,6 +33,22 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
+  {
+    title: 'Freedom without Borders',
+    Svg: require('@site/static/img/big-dipper-svgrepo-com.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
+  {
+    title: 'Power by Technology',
+    Svg: require('@site/static/img/atom-svgrepo-com.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {

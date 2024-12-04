@@ -9,8 +9,8 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 
-  title: 'yufoo1\'s Site',
-  tagline: 'With Math, Love Programming.',
+  title: '婚俗词语料库',
+  // tagline: 'With Math, Love Programming.',
   url: 'https://yufoo1.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -74,7 +74,7 @@ const config = {
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'yufoo1\'s Site',
+        title: '婚俗词语料库',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -86,7 +86,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/yufoo1',
             label: 'GitHub',
@@ -106,23 +106,23 @@ const config = {
               },
             ],
           },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
+          // {
+          //   title: 'Community',
+          //   items: [
+          //     {
+          //       label: 'Stack Overflow',
+          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+          //     },
+          //     {
+          //       label: 'Discord',
+          //       href: 'https://discordapp.com/invite/docusaurus',
+          //     },
+          //     {
+          //       label: 'Twitter',
+          //       href: 'https://twitter.com/docusaurus',
+          //     },
+          //   ],
+          // },
           {
             title: 'More',
             items: [
@@ -137,7 +137,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} yufoo1's Site.`,
+        // copyright: `Copyright © ${new Date().getFullYear()} yufoo1's Site.`,
       },
       colorMode: {
         defaultMode: 'light',

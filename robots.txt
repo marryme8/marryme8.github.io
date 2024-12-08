@@ -1,3 +1,5 @@
+# Algolia-Crawler-Verif: EDC7BC7DD3D11602
+
 User-agent: *
 Allow: /
 Sitemap: https://marryme8.github.io/sitemap.xml

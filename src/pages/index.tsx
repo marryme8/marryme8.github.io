@@ -31,7 +31,7 @@ function HomepageHeader() {
                 'version:1.0.0',
               ],
               indexName: 'demo',
-            }} appId={'A5Q8WWLEBR'} apiKey={'f50d1bb3d471eab0865c36dfb47308e5'} indexName={'demo'}/>
+            }} appId={'A5Q8WWLEBR'} apiKey={'f50d1bb3d471eab0865c36dfb47308e5'} indexName={'crawler_marryme'}/>
         </div>
       </div>
     </header>

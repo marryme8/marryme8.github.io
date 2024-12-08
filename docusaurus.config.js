@@ -30,9 +30,9 @@ const config = {
     locales: ['en'],
   },
 
-  plugins: [[ require.resolve('docusaurus-lunr-search'), {
-    languages: ['en', 'zh'] // language codes
-  }]],
+        plugins: [[ require.resolve('docusaurus-lunr-search'), {
+        languages: ['en', 'zh'] // language codes
+      }]],
 
   presets: [
     [
@@ -109,7 +109,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/category/婚俗同义词组的判定',
               },
             ],
           },

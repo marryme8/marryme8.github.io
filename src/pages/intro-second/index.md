@@ -26,7 +26,7 @@
 </div> -->
 
 <div align='center'>
-    <img src="http://e.hiphotos.baidu.com/image/pic/item/a1ec08fa513d2697e542494057fbb2fb4316d81e.jpg" width='20%'></img>
+    <img src="/static/img/dragon.png" width='20%'></img>
 </div>
 
 奶龙，学术背景深厚，研究兴趣广泛，尤其专注于婚俗文化与传统习俗的演变与传承。作为一名学者，奶龙致力于从语言学、社会学及人类学等多个学科角度，深入探讨传统婚俗的文化内涵、历史背景以及现代社会中的变迁。通过跨学科的综合研究方法，奶龙在婚俗领域的研究已涵盖了婚礼习俗的语言特征、社会结构、文化传承等方面，并在相关领域中发表了多篇学术论文。

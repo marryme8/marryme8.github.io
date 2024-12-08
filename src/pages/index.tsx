@@ -9,6 +9,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import styles from './index.module.css';
 import LoginPage from './login/index';
 import { DocSearch } from '@docsearch/react';
+import '@docsearch/css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -23,13 +24,14 @@ function HomepageHeader() {
             to="/docs/intro">
             Let's Start
           </Link>
-          {/* <DocSearch
+          <DocSearch
             searchParameters={{
               facetFilters: [
                 'language:cn',
                 'version:1.0.0',
               ],
-            }} appId={'A5Q8WWLEBR'} apiKey={'f50d1bb3d471eab0865c36dfb47308e5'} indexName={'demo'}/> */}
+              indexName: 'demo',
+            }} appId={'A5Q8WWLEBR'} apiKey={'f50d1bb3d471eab0865c36dfb47308e5'} indexName={'demo'}/>
         </div>
       </div>
     </header>

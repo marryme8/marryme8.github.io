@@ -10,7 +10,7 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Faith in Love',
+    title: '婚俗词语料库',
     Svg: require('@site/static/img/galaxy-svgrepo-com.svg').default,
     description: (
       <>
@@ -18,7 +18,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Freedom without Borders',
+    title: '婚俗同义词组的判定',
     Svg: require('@site/static/img/big-dipper-svgrepo-com.svg').default,
     description: (
       <>
@@ -26,29 +26,29 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Power by Technology',
+    title: '婚俗同义词组的划分',
     Svg: require('@site/static/img/atom-svgrepo-com.svg').default,
     description: (
       <>
       </>
     ),
   },
-  {
-    title: 'Freedom without Borders',
-    Svg: require('@site/static/img/big-dipper-svgrepo-com.svg').default,
-    description: (
-      <>
-      </>
-    ),
-  },
-  {
-    title: 'Power by Technology',
-    Svg: require('@site/static/img/atom-svgrepo-com.svg').default,
-    description: (
-      <>
-      </>
-    ),
-  },
+  // {
+  //   title: 'Freedom without Borders',
+  //   Svg: require('@site/static/img/big-dipper-svgrepo-com.svg').default,
+  //   description: (
+  //     <>
+  //     </>
+  //   ),
+  // },
+  // {
+  //   title: 'Power by Technology',
+  //   Svg: require('@site/static/img/atom-svgrepo-com.svg').default,
+  //   description: (
+  //     <>
+  //     </>
+  //   ),
+  // },
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {

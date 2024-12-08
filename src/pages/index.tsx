@@ -8,8 +8,8 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
 import styles from './index.module.css';
 import LoginPage from './login/index';
-import { DocSearch } from '@docsearch/react';
 import '@docsearch/css';
+import SearchBar from '@theme/SearchBar'
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();

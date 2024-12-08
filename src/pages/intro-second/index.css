@@ -1,0 +1,10 @@
+.intro-div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-h1-text {
+    margin-bottom: 20px;
+}

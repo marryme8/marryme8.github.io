@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://marryme8.github.io/sitemap.xml

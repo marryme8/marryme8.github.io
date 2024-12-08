@@ -1,25 +1,26 @@
-name: docsearch
+name: Algolia Recrawl Example
+
 on:
   push:
-    branches: ["master"]
+    branches: [ main ]
+  pull_request:
+    types: ['opened', 'edited', 'reopened', 'synchronize']
+
 jobs:
-  algolia:
+  algolia_crawl:
+    name: Algolia Recrawl
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      # checkout this repo
+      - name: Checkout Repo
+        uses: actions/checkout@v2
 
-      - name: Get the content of docsearch.json as config
-        id: algolia_config
-        run: echo "::set-output name=config::$(cat docsearch.json | jq -r tostring)"
-
-      - name: Run algolia/docsearch-scraper image
-        env:
-          ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
-          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
-          CONFIG: ${{ steps.algolia_config.outputs.config }}
-        run: |
-          docker run \
-            --env ALGOLIA_APP_ID=${ALGOLIA_APP_ID} \
-            --env API_KEY=${ALGOLIA_API_KEY} \
-            --env "CONFIG=${CONFIG}" \
-            algolia/docsearch-scraper
+      - name: Algolia crawler creation and crawl
+        uses: algolia/algoliasearch-crawler-github-actions@v1
+        id: algolia_crawler
+        with: # mandatory parameters
+          crawler-user-id: ${{ secrets.CRAWLER_USER_ID }}
+          crawler-api-key: ${{ secrets.CRAWLER_API_KEY }}
+          algolia-app-id: ${{ secrets.ALGOLIA_APP_ID }}
+          algolia-api-key: ${{ secrets.ALGOLIA_API_KEY }}
+          site-url: 'https://marryme8.github.io/'

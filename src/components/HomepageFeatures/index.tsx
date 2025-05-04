@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: '婚俗同义词组的划分',
+    title: '同义词组差异性分析',
     Svg: require('@site/static/img/tie.svg').default,
     description: (
       <>

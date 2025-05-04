@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: '婚俗词语料库',
-    Svg: require('@site/static/img/galaxy-svgrepo-com.svg').default,
+    Svg: require('@site/static/img/ring.svg').default,
     description: (
       <>
       </>
@@ -19,7 +19,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '婚俗同义词组的判定',
-    Svg: require('@site/static/img/big-dipper-svgrepo-com.svg').default,
+    Svg: require('@site/static/img/garment.svg').default,
     description: (
       <>
       </>
@@ -27,28 +27,20 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '婚俗同义词组的划分',
-    Svg: require('@site/static/img/atom-svgrepo-com.svg').default,
+    Svg: require('@site/static/img/cake.svg').default,
     description: (
       <>
       </>
     ),
   },
-  // {
-  //   title: 'Freedom without Borders',
-  //   Svg: require('@site/static/img/big-dipper-svgrepo-com.svg').default,
-  //   description: (
-  //     <>
-  //     </>
-  //   ),
-  // },
-  // {
-  //   title: 'Power by Technology',
-  //   Svg: require('@site/static/img/atom-svgrepo-com.svg').default,
-  //   description: (
-  //     <>
-  //     </>
-  //   ),
-  // },
+  {
+    title: '婚俗同义词组的划分',
+    Svg: require('@site/static/img/tie.svg').default,
+    description: (
+      <>
+      </>
+    ),
+  },
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {
@@ -69,8 +61,13 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
+        <div className="row" style={{width: '100%', justifyContent: 'space-around'}}>
+          {FeatureList.slice(0, 2).map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
+        </div>
+        <div className="row" style={{width: '100%', justifyContent: 'space-around'}}>
+          {FeatureList.slice(2, 4).map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>

@@ -11,7 +11,6 @@ const initialOptions: videojs.PlayerOptions = {
     controls: true,
     fluid: true,
     controlBar: {
-        playToggle: false,
         volumePanel: {
         inline: false
         }

@@ -87,7 +87,6 @@ const config = {
           {to: '/intro', label: '团队简介', position: 'left'},
           {to: '/docs/category/婚俗同义词组的判定', label: '文字资料库', position: 'left'},
           {to: '/video', label: '视频资料', position: 'left'},
-          {to: '/blog', label: '讨论区', position: 'left'},
         ],
       },
       footer: {

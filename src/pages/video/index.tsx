@@ -7,19 +7,18 @@ import './index.css'
 const videoJsOptions = {
     sources: [
         {
-        src: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
-        type: "video/mp4"
+          src: "/video.mp4",
+          type: "video/mp4"
         }
     ]
   };
 
-export default function Hello() {
+export default function Index() {
   return (
     <Layout title="Hello" description="Hello React Page">
       <div className='video-div'>
         <h1 className='video-h1-text'>婚俗词视频展示</h1>
-        {/* <p>This is a new page added to the app.</p> */}
-        <div style={{width: "50%"}}>
+        <div style={{width: "50%", marginBottom: '20px'}}>
             <VideoPlayer options={videoJsOptions}/>
         </div>
       </div>

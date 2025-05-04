@@ -11,6 +11,7 @@ const initialOptions: videojs.PlayerOptions = {
     controls: true,
     fluid: true,
     controlBar: {
+        playToggle: false,
         volumePanel: {
         inline: false
         }
@@ -26,7 +27,6 @@ const VideoPlayer: React.FC<IVideoPlayerProps> = ({ options }) => {
         ...initialOptions,
         ...options
         }).ready(function() {
-        // console.log('onPlayerReady', this);
         });
         return () => {
         if (player.current) {

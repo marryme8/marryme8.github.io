@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://yufoo1.github.io/blog"/>
     <subtitle>婚俗词语料库 Blog</subtitle>
-    <icon>https://yufoo1.github.io/img/favicon.ico</icon>
+    <icon>https://yufoo1.github.io/img/wedding.svg</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>welcome</id>

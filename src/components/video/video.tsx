@@ -10,6 +10,7 @@ interface IVideoPlayerProps {
 const initialOptions: videojs.PlayerOptions = {
     controls: true,
     fluid: true,
+    bigPlayButton: false,
     controlBar: {
         volumePanel: {
         inline: false

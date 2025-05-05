@@ -9,7 +9,7 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 
-  title: '婚俗词语料库',
+  title: '现代汉语婚俗同义词研究',
   // tagline: 'With Math, Love Programming.',
   url: 'https://yufoo1.github.io',
   baseUrl: '/',
@@ -69,15 +69,15 @@ const config = {
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: '婚俗词语料库',
+        title: '现代汉语婚俗同义词研究',
         logo: {
           alt: 'My Site Logo',
           src: 'img/wedding.svg',
         },
         items: [
           {to: '/intro', label: '团队简介', position: 'left'},
-          {to: '/docs/category/婚俗同义词组的判定', label: '文字资料库', position: 'left'},
-          {to: '/video', label: '视频资料', position: 'left'},
+          {to: '/docs/category/婚俗同义词组的判定', label: '研究成果', position: 'left'},
+          {to: '/video', label: '宣传视频', position: 'left'},
         ],
       },
       colorMode: {

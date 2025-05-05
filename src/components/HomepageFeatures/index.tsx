@@ -10,7 +10,7 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: '婚俗词语料库',
+    title: '婚俗词汇语料库',
     Svg: require('@site/static/img/ring.svg').default,
     description: (
       <>

@@ -9,7 +9,7 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 
-  title: '现代汉语婚俗同义词研究',
+  title: '现代汉语婚俗词汇同义词研究',
   // tagline: 'With Math, Love Programming.',
   url: 'https://yufoo1.github.io',
   baseUrl: '/',
@@ -69,7 +69,7 @@ const config = {
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: '现代汉语婚俗同义词研究',
+        title: '现代汉语婚俗词汇同义词研究',
         logo: {
           alt: 'My Site Logo',
           src: 'img/wedding.svg',
